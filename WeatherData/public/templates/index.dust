@@ -1,0 +1,25 @@
+{>"layouts/master" /}
+
+{<body}
+
+<div align="center">
+    <h1>{@pre type="content" key="index.greeting"/}</h1>
+
+ <table id="time" border="1">
+    <tr>
+        <td>City</td>
+        <td>State</td>
+        <td>Weather (celsius) </td>
+    </tr>
+  {#names}  
+    <tr>
+        <td>{city}</td>{~n}
+        <td>{state}</td>{~n}
+        <td>{weather}</td>{~n}
+    </tr>
+  {/names}
+
+</table>
+</div>
+
+{/body}
